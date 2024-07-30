@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Mansory';
+    src: url('../Mansory_font/Mansory.otf') format('opentype'),
+         url('../Mansory_font/Mansory.ttf') format('truetype'),
+         url('../Mansory_font/Mansory Bold.otf') format('opentype'),
+         url('../Mansory_font/Mansory Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Mansory', sans-serif;
+    background-color: #f8f8f8;
+}
+
+.boutique-name {
+    font-size: 2rem;
+    display: inline;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    width: 30%;
+    padding-bottom: .4rem;
+}
+
+.nav a{
+    text-decoration:none;
+    color: black;
+    transition: .5s ease-in-out;
+}
+
+.nav a:hover{
+   transform: scale(1.05);
+   opacity: .8;
+}
+
+.navigation img{
+    cursor: pointer;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; 
+    float: right;
+}
+
+.navigation img:hover{
+    animation: rotate 1s  .4s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.email-input, .password-input, .first-name, .last-name{
+    display: block;
+    margin: 1.3rem;
+    width: 25rem;
+    height: 2.5rem;
+    border: 1px solid lightgray;
+    text-indent: .5rem;
+    outline: none;
+}
+
+.email-input:focus, .password-input:focus, .first-name:focus, .last-name:focus{
+    border: 1px solid black;
+}
+
+.email-input::placeholder, .password-input::placeholder, .first-name::placeholder, .last-name::placeholder{
+    font-family: 'Mansory', sans-serif;
+}
+
+.forgot-password a{
+    text-decoration: none;
+    color: gray;
+    font-size: .7rem;
+}
+
+.no-account{
+    color: gray;
+    font-size: .7rem;
+}
+
+.no-account a{
+    text-decoration: none;
+    color: gray;
+    font-size: .7rem;
+}
+
+.submit-button{
+    display: block;
+    width: 25rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin: 1.3rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.submit-button:hover{
+    background-color: transparent;
+    color: black;
+}
+
+@keyframes rotate{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+header{
+    padding: 0.7rem;
+} 
+
+.search-button{
+    background-color: transparent;
+    border: none ;
+}
+
+.login-form{
+    margin-top: 15rem;
+}
+
+.title{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.instruction{
+    padding-top: .5rem;
+    font-size: .85rem;
+    color: gray;
+}
+
+.error{
+    font-size: .8rem;
+    color: #ca0d0a;
+}
